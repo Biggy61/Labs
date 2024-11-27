@@ -8,7 +8,7 @@ namespace Bank
         public decimal Balance;
         public string OwnerName;
         public static int AccountNumber = 1;
-        public BankAccount(int accNum, decimal balance, string ownerName)
+        public BankAccount(decimal balance, string ownerName)
         {
             AccNum = AccountNumber++;
             Balance = balance;
@@ -23,26 +23,34 @@ namespace Bank
             }
         }
 
-        public void Write()
+        public void WriteBefore()
         {
             Console.WriteLine($"AccNum: {AccNum}, Balance: {Balance}, OwnerName: {OwnerName}");
         }
+        public void WriteAfter()
+        {
+            Console.WriteLine($"After: AccNum: {AccNum}, Balance: {Balance}, OwnerName: {OwnerName}");
+        }
         public void Deposit(decimal amount)
         {
+            WriteBefore();
             if (amount <= 0)
             {
                 throw new InvalidOperationException ("Cant make a deposit with 0");
             }
             Balance += amount;
+            WriteAfter();
         }
 
         public void Withdraw(decimal amount)
         {
+            WriteBefore();
             if (amount <= 0)
             {
                 throw new InvalidOperationException ("Cant make a withdraw with 0");
             }
             Balance -= amount;
+            WriteAfter();
         }
 
 

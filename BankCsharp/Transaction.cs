@@ -9,29 +9,38 @@ namespace Bank
         public BankAccount ToAccount;
         public DateTime Date;
         public decimal Amount;
-        public bool HumanVerificationNeeded;
+        public bool HumanVerificationNeeded { get; set; }
         public Verification Verification { get; set; }
         public bool Verified = false;
-        public Transaction(BankAccount fromAccount, BankAccount toAccount, DateTime date, decimal amount, bool humanVerificationNeeded)
+        public Transaction(BankAccount fromAccount, BankAccount toAccount, DateTime date, decimal amount)
         {
             FromAccount = fromAccount;
             ToAccount = toAccount;
             Date = date;
             Amount = amount;
-            HumanVerificationNeeded = humanVerificationNeeded;
-            if (amount >= 100000) { humanVerificationNeeded = true; }
-            else { humanVerificationNeeded = false; }
+            if (amount > 100000) {
+                HumanVerificationNeeded = true;
+                return;
+            }
+            HumanVerificationNeeded = false;
         }
 
-        public void Write()
+        public void WriteBefore()
         {
             Console.WriteLine($"From: {FromAccount.OwnerName}: {FromAccount.Balance}, To {ToAccount.OwnerName}: {ToAccount.Balance}, Amount: {Amount}, Date: {Date}, HumanVerificationNeeded: {HumanVerificationNeeded}");
         }
+        public void WriteAfter()
+        {
+            Console.WriteLine($"After transaction: {FromAccount.OwnerName}: {FromAccount.Balance}, {ToAccount.OwnerName}: {ToAccount.Balance}, Date: {Date}");
+        }
+
 
         public void Execute()
         {
+            WriteBefore();
             FromAccount.Balance -= Amount;
             ToAccount.Balance += Amount;
+            WriteAfter();
         }
         public void DeniedTransaction(Verification verification)
         {
@@ -39,7 +48,7 @@ namespace Bank
         }
         public override string ToString()
         {
-            return $"From: {FromAccount.OwnerName}: {FromAccount.Balance}, To {ToAccount.OwnerName}: {ToAccount.Balance}, Amount: {Amount}, Date: {Date}";
+            return $"From: {FromAccount.OwnerName}: {FromAccount.Balance}, To {ToAccount.OwnerName}: {ToAccount.Balance}, Amount: {Amount}, Date: {Date}, HumanVerificationNeeded: {HumanVerificationNeeded}";
         }
     }
 }
