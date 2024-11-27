@@ -1,0 +1,17 @@
+# ninja log v6
+70	677	7541855409665166	CMakeFiles/BankCPP.dir/BankAccount.cpp.obj	95aa120795efa062
+13	592	7541861368851582	CMakeFiles/BankCPP.dir/main.cpp.obj	86847fbcccf94019
+16	584	7541861278215486	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+593	707	7541861374650800	BankCPP.exe	a6eb86bee30ac7ab
+15	818	7542704940755301	CMakeFiles/BankCPP.dir/main.cpp.obj	86847fbcccf94019
+12	563	7542705079817528	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+563	868	7542705085327424	BankCPP.exe	f049e4d5a24d6ea4
+58	1006	7544382371566742	CMakeFiles/BankCPP.dir/BankAccount.cpp.obj	95aa120795efa062
+47	1007	7544382371456726	CMakeFiles/BankCPP.dir/main.cpp.obj	86847fbcccf94019
+67	1008	7544382371666733	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+5	607	7544384230836820	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+12	611	7544384423784563	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+6	605	7544392368287878	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+13	685	7544392802656902	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+41	1763	7544453762813724	CMakeFiles/BankCPP.dir/Transaction.cpp.obj	c841df7c98ce768
+12	600	7544455323268371	CMakeFiles/BankCPP.dir/main.cpp.obj	86847fbcccf94019
