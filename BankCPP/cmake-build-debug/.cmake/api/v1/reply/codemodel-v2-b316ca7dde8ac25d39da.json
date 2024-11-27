@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/stepa/Desktop/BankCPP/cmake-build-debug",
-		"source" : "C:/Users/stepa/Desktop/BankCPP"
+		"build" : "C:/Users/stepa/Desktop/Bank/Bank/BankCPP/cmake-build-debug",
+		"source" : "C:/Users/stepa/Desktop/Bank/Bank/BankCPP"
 	},
 	"version" : 
 	{

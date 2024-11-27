@@ -45,7 +45,6 @@ namespace Bank
             transaction3.Write();
             transaction3.Execute();
             transaction3.Write();
- 
             
             Console.ReadKey();
         }
