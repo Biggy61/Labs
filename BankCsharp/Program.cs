@@ -7,7 +7,6 @@ namespace Bank
     {
         static void Main(string[] args)
         {
-
             Bank ceskaBanka = new Bank("Bank", new List<BankAccount>(), new List<Transaction>());
             BankAccount richman = new BankAccount(0, 10000, "Vaclav");
             BankAccount radek = new BankAccount(0, 10000, "radek");
@@ -15,12 +14,12 @@ namespace Bank
             ceskaBanka.AddAccount(radek);
             ceskaBanka.WriteBankAccounts();
 
-            Transaction vyplataPredDPH = new Transaction(richman, radek , DateTime.Now, 200000, false); 
-            Transaction vyplataPoDPH = new Transaction(richman, radek , DateTime.Now, 2000, false); 
+            Transaction vyplataPredDPH = new Transaction(richman, radek, DateTime.Now, 200000, false);
+            Transaction vyplataPoDPH = new Transaction(richman, radek, DateTime.Now, 2000, false);
             ceskaBanka.AddTransaction(vyplataPredDPH);
             ceskaBanka.AddTransaction(vyplataPoDPH);
             ceskaBanka.WriteTransactions();
-            
+
 
             BankAccount user1 = new BankAccount(0, 1000, "Pavel");
             BankAccount user2 = new BankAccount(0, 2000, "Vaclav");
@@ -45,7 +44,7 @@ namespace Bank
             transaction3.Write();
             transaction3.Execute();
             transaction3.Write();
-            
+
             Console.ReadKey();
         }
     }
