@@ -19,4 +19,9 @@ void  BankAccount::Withdraw(float amount)
     cout << "Balance: " << Balance << endl;
 }
 
+void BankAccount::Write()
+{
+    cout << "AccountNumber: " << AccountNumber << " OwnerName: " << OwnerName  << " Balance: " << Balance << endl;
+}
+
 

@@ -10,8 +10,8 @@
 class Transaction
 {
 public:
-    BankAccount fromAccount;
-    BankAccount toAccount;
+    BankAccount FromAccount;
+    BankAccount ToAccount;
     float amount;
     string date;
 

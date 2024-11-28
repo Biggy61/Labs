@@ -6,6 +6,7 @@
 #define BANKACCOUNT_H
 #include <string>
 #include <iostream>
+#include "BankAccount.h"
 using namespace std;
 
 class BankAccount
@@ -16,10 +17,9 @@ public:
     string OwnerName;
 
     BankAccount(int account_number, float balance, string owner_name);
-    BankAccount();
     void Deposit(float amount);
     void Withdraw(float amount);
-
+    void Write();
 };
 
 

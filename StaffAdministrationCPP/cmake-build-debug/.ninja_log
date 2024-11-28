@@ -1,0 +1,10 @@
+# ninja log v6
+24	325	7545279544655853	CMakeFiles/StaffAdministration.dir/main.cpp.obj	cdc67e5d43f4590e
+38	817	7545268442445378	CMakeFiles/StaffAdministration.dir/Employee.cpp.obj	cc2ec005ba32e981
+43	772	7545346745181837	build.ninja	91652d45e47f98c4
+325	461	7545279547652561	StaffAdministration.exe	9b06e4addfc43c96
+36	324	7545279544775872	CMakeFiles/StaffAdministration.dir/Manager.cpp.obj	c1e35b2579cf7e2b
+38	311	7545347130630351	CMakeFiles/StaffAdministration.dir/Employee.cpp.obj	f673e2e633185b03
+26	325	7545347130520351	CMakeFiles/StaffAdministration.dir/main.cpp.obj	de58014387c01a2b
+49	332	7545347130750376	CMakeFiles/StaffAdministration.dir/Manager.cpp.obj	68aaf9dbb614a344
+333	445	7545347133580345	StaffAdministration.exe	9b06e4addfc43c96

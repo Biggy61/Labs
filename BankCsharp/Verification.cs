@@ -7,11 +7,11 @@ public class Verification
     public VerificationResults VerificationResult { get; set; }
     public string FurtherInfo  { get; set; }
 
-    public Verification(string verifier, DateTime verificationDate, VerificationResults VerificationResult, string furtherInfo)
+    public Verification(string verifier, DateTime verificationDate, VerificationResults verificationResult, string furtherInfo)
     {
         Verifier = verifier;
         VerificationDate = verificationDate;
-        VerificationResult = VerificationResult;
+        VerificationResult = verificationResult;
         if(VerificationResult is VerificationResults.Denied or VerificationResults.FurtherVerificationNeeded)
         {
             FurtherInfo = furtherInfo;

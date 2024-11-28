@@ -5,16 +5,19 @@
 #include "Transaction.h"
 #include "BankAccount.h"
 
-Transaction::Transaction(BankAccount fromAccount, BankAccount toAccount, float amount, string date)
+Transaction::Transaction(BankAccount fromAccount, BankAccount toAccount, float amount, string date): FromAccount(fromAccount),
+    ToAccount(ToAccount)
 {
-    this->fromAccount = fromAccount;
-    this->toAccount = toAccount;
+
+    FromAccount = fromAccount;
+    ToAccount = toAccount;
     this->amount = amount;
     this->date = date;
-}
 
+}
 void Transaction::Execute()
 {
-    fromAccount.Balance -= amount;
-    toAccount.Balance += amount;
+    FromAccount.Balance -= amount;
+    ToAccount.Balance += amount;
 }
+
