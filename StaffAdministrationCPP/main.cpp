@@ -10,4 +10,3 @@ int main()
     radek.DisplayInformation();
     return 0;
 }
-test

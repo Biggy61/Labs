@@ -23,6 +23,5 @@ float Employee::CalculateMonthlySalary()
 
 void Employee::DisplayInformation()
 {
-
     cout << "Name: " << Name << " Monthly salary: " << CalculateMonthlySalary() << " Department: " << Department << endl;
 }
