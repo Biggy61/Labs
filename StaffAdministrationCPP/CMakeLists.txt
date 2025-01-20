@@ -7,4 +7,6 @@ add_executable(StaffAdministration main.cpp
         Employee.cpp
         Employee.h
         Manager.cpp
-        Manager.h)
+        Manager.h
+        Boss.cpp
+        Boss.h)

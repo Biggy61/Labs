@@ -6,10 +6,10 @@
 #define MANAGER_H
 #include "Employee.h"
 
-class Manager: public Employee {
+class Manager : public Employee{
   public:
    float Bonus;
-    Manager(string name, float yearly_salary,string department, float bonus);
+    Manager(string name, float yearly_salary,department department, float bonus);
     float CalculateMonthlySalary();
     void DisplayInformation();
 

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/stepa/Desktop/Bank/Bank/StaffAdministrationCPP
+# Install script for directory: C:/Users/stepa/Desktop/Projects/Labs/StaffAdministrationCPP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/stepa/Desktop/Bank/Bank/StaffAdministrationCPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/stepa/Desktop/Projects/Labs/StaffAdministrationCPP/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

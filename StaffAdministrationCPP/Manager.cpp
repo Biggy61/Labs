@@ -6,21 +6,19 @@
 
 #include <iostream>
 
-Manager::Manager(string name, float yearly_salary,string department, float bonus) : Employee(name,yearly_salary,department)
+Manager::Manager(string name, float yearly_salary, department department, float bonus) : Employee(name, yearly_salary, department)
 {
     Bonus = bonus;
 }
 
 float Manager::CalculateMonthlySalary()
 {
-    float monthly_salary = (YearlySalary+ Bonus) / 12 ;
+    float monthly_salary = (YearlySalary + Bonus) / 12;
     return monthly_salary;
 }
 
 void Manager::DisplayInformation()
 {
-
-    cout << "Name: " << Name << " Monthly salary: " << CalculateMonthlySalary() << " Department: " << Department << endl;
+    cout << "Name: " << Name << " Monthly salary: " << CalculateMonthlySalary() << " Department: " << Department <<
+        endl;
 }
-
-

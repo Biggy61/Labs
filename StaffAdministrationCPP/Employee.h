@@ -13,7 +13,14 @@ public:
     float YearlySalary;
     string Department;
 
-    Employee(string name, float yearly_salary,string department);
+    enum department
+    {
+        ItSupport,
+        NetworkingEngineer,
+        Programmer,
+        Company,
+    };
+    Employee(string name, float yearly_salary, department department);
     Employee();
     float CalculateMonthlySalary();
     void DisplayInformation();
